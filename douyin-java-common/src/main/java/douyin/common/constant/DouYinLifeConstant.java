@@ -67,4 +67,37 @@ public interface DouYinLifeConstant {
      * 账单详细查询
      */
     String MEMBER_UPDATE = "https://open.douyin.com/goodlife/v1/member/user/update/";
+
+    //******************************** 外卖 ********************************
+
+    /**
+     * 拒绝接单接口
+     * 用户下单后，第三方可调用此接口对抖音团购配送订单进行“拒单”操作。
+     */
+    String AFTER_SALE_ORDER_MERCHANT_REJECT = "https://open.douyin.com/goodlife/v1/after_sale/order/merchant_reject/";
+
+    /**
+     * 商家取消订单接口
+     */
+    String AFTER_SALE_ORDER_APPLY_REFUND = "https://open.douyin.com/goodlife/v1/after_sale/order/apply_refund/";
+
+    /**
+     * 确认订单接口
+     */
+    String TRADE_BUY_MERCHANT_CONFIRM_ORDER = "https://open.douyin.com/goodlife/v1/trade/buy/merchant_confirm_order/";
+
+    /**
+     * 订单查询接口
+     */
+    String TRADE_ORDER_QUERY = "https://open.douyin.com/goodlife/v1/trade/order/query/";
+
+    /**
+     * 商家同意/拒绝退款接口
+     */
+    String AFTER_SALE_AUDIT_NOTIFY = "https://open.douyin.com/goodlife/v1/after_sale/audit/notify/";
+
+    /**
+     * 自配送-回传配送信息接口
+     */
+    String FULFILMENT_DISTRIBUTION_ORDER_SYNC_STATUS = "https://open.douyin.com/goodlife/v1/fulfilment/distribution/order/sync_status/";
 }
