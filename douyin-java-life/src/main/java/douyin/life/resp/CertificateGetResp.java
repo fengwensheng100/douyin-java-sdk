@@ -4,7 +4,7 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 /**
- * @ClassName CertificatePrepareResp
+ * @ClassName CertificateGetResp
  * @Description: 券状态查询响应
  * @Author fengwensheng
  * @Date 2022/10/19

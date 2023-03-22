@@ -3,8 +3,8 @@ package douyin.life.resp;
 import lombok.Data;
 
 /**
- * @ClassName CertificatePrepareResp
- * @Description: 基础响应
+ * @ClassName BaseResp
+ * @Description: 基础响应体
  * @Author fengwensheng
  * @Date 2022/10/19
  * @Version V1.0

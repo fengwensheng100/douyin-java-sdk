@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @ClassName CertificatePrepareResp
+ * @ClassName ShopPoiQueryResp
  * @Description: 门店信息查询响应
  * @Author fengwensheng
  * @Date 2022/10/19

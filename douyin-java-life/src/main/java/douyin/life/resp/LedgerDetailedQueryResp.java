@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @ClassName DetailedQueryResp
+ * @ClassName LedgerDetailedQueryResp
  * @Description: TODO
  * @Author fengwensheng
  * @Date 2023/1/30

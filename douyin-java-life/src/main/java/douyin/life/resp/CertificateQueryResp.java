@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * @ClassName CertificatePrepareResp
+ * @ClassName CertificateQueryResp
  * @Description: 券状态批量查询响应
  * @Author fengwensheng
  * @Date 2022/10/19

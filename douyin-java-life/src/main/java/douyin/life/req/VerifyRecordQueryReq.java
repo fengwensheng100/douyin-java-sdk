@@ -1,17 +1,15 @@
 package douyin.life.req;
 
-import lombok.Builder;
 import lombok.Data;
 
 /**
- * @ClassName VerifyRecordQuery
- * @Description: TODO
+ * @ClassName VerifyRecordQueryReq
+ * @Description: 验券历史查询请求
  * @Author fengwensheng
  * @Date 2023/3/20
  * @Version V1.0
  **/
 @Data
-@Builder
 public class VerifyRecordQueryReq {
 
     /**

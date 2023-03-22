@@ -3,7 +3,7 @@ package douyin.life.resp;
 import lombok.Data;
 
 /**
- * @ClassName CertificatePrepareResp
+ * @ClassName CertificateCancelResp
  * @Description: 验券响应
  * @Author fengwensheng
  * @Date 2022/10/19

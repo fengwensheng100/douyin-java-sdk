@@ -1,17 +1,15 @@
 package douyin.life.req;
 
-import lombok.Builder;
 import lombok.Data;
 
 /**
- * @ClassName CertificatePrepareResp
+ * @ClassName ShopPoiQueryReq
  * @Description: 门店信息查询请求
  * @Author fengwensheng
  * @Date 2022/10/19
  * @Version V1.0
  **/
 @Data
-@Builder
 public class ShopPoiQueryReq {
 
     /**

@@ -1,17 +1,15 @@
 package douyin.life.req;
 
-import lombok.Builder;
 import lombok.Data;
 
 /**
- * @ClassName DetailedQueryResp
- * @Description: TODO
+ * @ClassName LedgerDetailedQueryReq
+ * @Description: 账单详细查询请求
  * @Author fengwensheng
  * @Date 2023/1/30
  * @Version V1.0
  **/
 @Data
-@Builder
 public class LedgerDetailedQueryReq {
 
     /**

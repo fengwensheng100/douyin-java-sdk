@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @ClassName CertificatePrepareResp
+ * @ClassName CertificateVerifyResp
  * @Description: 验券响应
  * @Author fengwensheng
  * @Date 2022/10/19

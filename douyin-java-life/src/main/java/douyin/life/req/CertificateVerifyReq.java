@@ -1,18 +1,16 @@
 package douyin.life.req;
 
-import lombok.Builder;
 import lombok.Data;
 import java.util.List;
 
 /**
- * @ClassName CertificatePrepareResp
+ * @ClassName CertificateVerifyReq
  * @Description: 验券请求
  * @Author fengwensheng
  * @Date 2022/10/19
  * @Version V1.0
  **/
 @Data
-@Builder
 public class CertificateVerifyReq {
     /**
      * 一次验券的标识 (用于短时间内的幂等)，是否必填：是

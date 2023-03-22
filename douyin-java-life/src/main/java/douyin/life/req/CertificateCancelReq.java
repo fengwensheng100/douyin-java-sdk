@@ -1,17 +1,15 @@
 package douyin.life.req;
 
-import lombok.Builder;
 import lombok.Data;
 
 /**
- * @ClassName CertificatePrepareResp
- * @Description: 验券请求
+ * @ClassName CertificateCancelReq
+ * @Description: 撤销核销请求
  * @Author fengwensheng
  * @Date 2022/10/19
  * @Version V1.0
  **/
 @Data
-@Builder
 public class CertificateCancelReq {
 
     /**

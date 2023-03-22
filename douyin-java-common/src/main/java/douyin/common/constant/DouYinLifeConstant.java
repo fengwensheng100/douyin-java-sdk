@@ -22,6 +22,11 @@ public interface DouYinLifeConstant {
      */
     String SHOP_POI_UPDATE = "https://open.douyin.com/goodlife/v1/poi/poi/update/";
 
+    /**
+     * 查询匹配关系
+     */
+    String POI_MATCH_RELATION_QUERY = "https://open.douyin.com/goodlife/v1/poi/match/relation/query/";
+
     //******************************** 团购核销 ********************************
 
     /**
@@ -64,7 +69,7 @@ public interface DouYinLifeConstant {
     //******************************** 会员接入 ********************************
 
     /**
-     * 账单详细查询
+     * 会员数据更新
      */
     String MEMBER_UPDATE = "https://open.douyin.com/goodlife/v1/member/user/update/";
 

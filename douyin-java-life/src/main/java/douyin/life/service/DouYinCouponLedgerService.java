@@ -9,15 +9,17 @@ import douyin.life.resp.LedgerDetailedQueryResp;
 public interface DouYinCouponLedgerService {
 
     /**
-     * 验券记录
-     * @param verifyRecordQueryReq
+     * 验券历史查询
+     * @param verifyRecordQueryReq 验券历史查询请求
+     * @param token
      * @return
+     * @throws Exception
      */
     BaseResp<CertificateBillQueryResp> verifyRecordQuery(VerifyRecordQueryReq verifyRecordQueryReq, String token) throws Exception;
 
     /**
      * 账单详细查询
-     * @param ledgerDetailedQueryReq
+     * @param ledgerDetailedQueryReq 账单详细查询请求
      * @param token
      * @return
      * @throws Exception

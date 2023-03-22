@@ -9,29 +9,33 @@ public interface DouYinCouponService {
 
     /**
      * 核销准备接口
-     * @param shortUrl 短链接
+     * @param short_url 短链接
+     * @param token
      * @return
      */
-    BaseResp<CertificatePrepareResp> certificatePrepare(String shortUrl, String token) throws Exception;
-
+    BaseResp<CertificatePrepareResp> certificatePrepare(String short_url, String token) throws Exception;
 
     /**
      * 核销准备接口
-     * @param code
+     * @param code 券码
+     * @param token
      * @return
+     * @throws Exception
      */
     BaseResp<CertificatePrepareResp> certificatePrepareByCode(String code, String token) throws Exception;
 
     /**
      * 券状态查询
-     * @param encrypted_code
+     * @param encrypted_code 加密券码
+     * @param token
      * @return
+     * @throws Exception
      */
     BaseResp<CertificateGetResp> certificateGet(String encrypted_code, String token) throws Exception;
 
     /**
      * 券状态批量查询
-     * @param certificateQueryReq
+     * @param certificateQueryReq 券状态批量查询请求
      * @param token
      * @return
      * @throws Exception
@@ -39,16 +43,17 @@ public interface DouYinCouponService {
     BaseResp<CertificateQueryResp> certificateQuery(CertificateQueryReq certificateQueryReq, String token) throws Exception;
 
     /**
-     * @Title: 核销
-     * @Description:
-     * @author fengwensheng
-     * @date 2022/10/23 0:25
+     * 核销
+     * @param certificateVerifyReq 验券请求
+     * @param token
+     * @return
+     * @throws Exception
      */
     BaseResp<CertificateVerifyResp> certificateVerify(CertificateVerifyReq certificateVerifyReq, String token) throws Exception;
 
     /**
      * 撤销核销
-     * @param certificateCancelReq
+     * @param certificateCancelReq 撤销核销请求
      * @param token
      * @return
      * @throws Exception

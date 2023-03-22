@@ -23,8 +23,8 @@ import org.apache.commons.lang3.StringUtils;
  **/
 public class DouYinCouponServiceImpl implements DouYinCouponService {
 
-    public BaseResp<CertificatePrepareResp> certificatePrepare(String shortUrl, String token) throws Exception {
-        String object_id = DouYinHttpUtils.getDouYinUrlParams(shortUrl, "object_id");
+    public BaseResp<CertificatePrepareResp> certificatePrepare(String short_url, String token) throws Exception {
+        String object_id = DouYinHttpUtils.getDouYinUrlParams(short_url, "object_id");
         String result = DouYinHttpUtils.get(DouYinLifeConstant.CERTIFICATE_PREPARE + "?encrypted_data=" + object_id, null, token);
         BaseResp<CertificatePrepareResp> prepareRespBaseResp = JSONUtil.toBean(result, new TypeReference<BaseResp<CertificatePrepareResp>>(){}, false);
         return prepareRespBaseResp;

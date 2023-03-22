@@ -1,34 +1,30 @@
 package douyin.life.req;
 
-import lombok.Builder;
 import lombok.Data;
-
 import java.util.List;
 
 /**
- * @ClassName CertificatePrepareResp
- * @Description: 验券请求
+ * @ClassName MemberUpdateReq
+ * @Description: 会员数据更新请求体
  * @Author fengwensheng
  * @Date 2022/10/19
  * @Version V1.0
  **/
 @Data
-@Builder
 public class MemberUpdateReq {
 
     /**
-     * 商户id
+     * 商户id，是否必填：是
      */
     private String account_id;
     /**
-     * 批量积分等级变更
+     * 批量积分等级变更，是否必填：是
      */
     private List<Member> members;
     @Data
-    @Builder
     public static class Member {
         /**
-         * 用户/会员openId
+         * 用户/会员openId，是否必填：是
          */
         private String open_id;
         /**
@@ -36,15 +32,15 @@ public class MemberUpdateReq {
          */
         private int points_update_cent;
         /**
-         * 用户最新积分(积分数量 * 100)
+         * 用户最新积分(积分数量 * 100)，是否必填：是
          */
         private int points_amount_cent;
         /**
-         * 新的等级
+         * 新的等级，是否必填：是
          */
         private int user_level;
         /**
-         * 数据更新时间（秒时间戳）
+         * 数据更新时间（秒时间戳），是否必填：是
          */
         private long update_time;
     }
