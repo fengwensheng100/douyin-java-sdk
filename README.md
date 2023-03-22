@@ -1,3 +1,8 @@
+## 项目说明
+1. 当前项目JDK版本最低支持为`JDK1.8`
+2. 为简化代码、提高代码可阅读性，项目中使用了`lombok`插件
+3. 开发文档参考[【开发文档wiki】](https://gitee.com/fwens/douyin-java-sdk/wikis/Home)
+
 ## 当前实现
 ### 生活服务开放能力
 #### 门店管理
@@ -24,7 +29,7 @@
 - 自配送-回传配送信息接口（未实现）
 
 ## 开始使用
-- 关于接口详细信息参考抖音开放平台官方文档【https://partner.open-douyin.com/docs/resource/zh-CN/dop/develop/openapi/list】
+- 关于接口详细信息参考[【抖音开放平台官方文档】](https://partner.open-douyin.com/docs/resource/zh-CN/dop/develop/openapi/list)
 
 1.在pom文件中引入下面依赖
 ```xml

@@ -13,7 +13,7 @@ import lombok.Data;
 public class MemberUpdateResp {
 
     /**
-     * 错误码
+     * 错误码，0为成功
      */
     private int error_code;
     /**

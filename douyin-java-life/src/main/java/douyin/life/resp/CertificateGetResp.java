@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 public class CertificateGetResp {
 
     /**
-     * 错误码
+     * 错误码，0为成功
      */
     private int error_code;
     /**

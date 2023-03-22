@@ -43,7 +43,7 @@ public interface DouYinCouponService {
     BaseResp<CertificateQueryResp> certificateQuery(CertificateQueryReq certificateQueryReq, String token) throws Exception;
 
     /**
-     * 核销
+     * 验券
      * @param certificateVerifyReq 验券请求
      * @param token
      * @return
@@ -59,11 +59,4 @@ public interface DouYinCouponService {
      * @throws Exception
      */
     BaseResp<CertificateCancelResp> certificateCancel(CertificateCancelReq certificateCancelReq, String token) throws Exception;
-
-    /**
-     * 缓存获取抖音token
-     * @return
-     * @throws Exception
-     */
-    String getDouYinToken() throws Exception;
 }

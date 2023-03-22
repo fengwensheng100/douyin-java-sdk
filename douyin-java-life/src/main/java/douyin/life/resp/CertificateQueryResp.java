@@ -15,7 +15,7 @@ import java.util.List;
 public class CertificateQueryResp {
 
     /**
-     * 错误码
+     * 错误码，0为成功
      */
     private int error_code;
     /**

@@ -85,8 +85,4 @@ public class DouYinCouponServiceImpl implements DouYinCouponService {
         BaseResp<CertificateCancelResp> certificateCancelResp = JSONUtil.toBean(result, new TypeReference<BaseResp<CertificateCancelResp>>(){}, false);
         return certificateCancelResp;
     }
-
-    public String getDouYinToken() throws Exception {
-        return null;
-    }
 }
