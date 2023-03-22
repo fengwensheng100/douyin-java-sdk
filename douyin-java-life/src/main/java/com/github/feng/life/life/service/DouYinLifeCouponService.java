@@ -1,11 +1,12 @@
 package com.github.feng.life.life.service;
 
+import com.github.feng.common.resp.BaseResp;
 import com.github.feng.life.life.req.CertificateCancelReq;
 import com.github.feng.life.life.req.CertificateQueryReq;
 import com.github.feng.life.life.req.CertificateVerifyReq;
 import com.github.feng.life.life.resp.*;
 
-public interface DouYinCouponService {
+public interface DouYinLifeCouponService {
 
     /**
      * 核销准备接口

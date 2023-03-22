@@ -1,6 +1,6 @@
 package com.github.feng.life.life.service.impl;
 
-import com.github.feng.life.life.service.DouYinAfterSaleService;
+import com.github.feng.life.life.service.DouYinLifeAfterSaleService;
 
 /**
  * @ClassName DouYinAfterSaleServiceImpl
@@ -9,7 +9,7 @@ import com.github.feng.life.life.service.DouYinAfterSaleService;
  * @Date 2023/3/21
  * @Version V1.0
  **/
-public class DouYinAfterSaleServiceImpl implements DouYinAfterSaleService {
+public class DouYinLifeAfterSaleServiceImpl implements DouYinLifeAfterSaleService {
 
     @Override
     public void afterSaleOrderMerchantReject() {}

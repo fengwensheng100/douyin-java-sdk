@@ -1,4 +1,4 @@
-package com.github.feng.life.life.resp;
+package com.github.feng.common.resp;
 
 import lombok.Data;
 

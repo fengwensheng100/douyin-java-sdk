@@ -12,6 +12,7 @@
         <module>douyin-java-common</module>
         <module>douyin-java-life</module>
         <module>douyin-java-data</module>
+        <module>douyin-java-core</module>
     </modules>
 
     <properties>

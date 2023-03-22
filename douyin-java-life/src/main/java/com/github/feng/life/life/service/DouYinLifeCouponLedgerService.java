@@ -1,12 +1,12 @@
 package com.github.feng.life.life.service;
 
+import com.github.feng.common.resp.BaseResp;
 import com.github.feng.life.life.req.LedgerDetailedQueryReq;
 import com.github.feng.life.life.req.VerifyRecordQueryReq;
-import com.github.feng.life.life.resp.BaseResp;
 import com.github.feng.life.life.resp.LedgerDetailedQueryResp;
 import com.github.feng.life.life.resp.CertificateBillQueryResp;
 
-public interface DouYinCouponLedgerService {
+public interface DouYinLifeCouponLedgerService {
 
     /**
      * 验券历史查询

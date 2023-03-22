@@ -4,13 +4,14 @@ import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.lang.TypeReference;
 import cn.hutool.json.JSONUtil;
 import com.github.feng.common.constant.DouYinLifeConstant;
+import com.github.feng.common.resp.BaseResp;
 import com.github.feng.common.util.DouYinHttpUtils;
 import com.github.feng.common.util.HttpUtils;
 import com.github.feng.life.life.req.CertificateCancelReq;
 import com.github.feng.life.life.req.CertificateQueryReq;
 import com.github.feng.life.life.req.CertificateVerifyReq;
 import com.github.feng.life.life.resp.*;
-import com.github.feng.life.life.service.DouYinCouponService;
+import com.github.feng.life.life.service.DouYinLifeCouponService;
 import org.apache.commons.lang3.StringUtils;
 
 /**
@@ -20,7 +21,7 @@ import org.apache.commons.lang3.StringUtils;
  * @Date 2023/3/15
  * @Version V1.0
  **/
-public class DouYinCouponServiceImpl implements DouYinCouponService {
+public class DouYinLifeCouponServiceImpl implements DouYinLifeCouponService {
 
     public BaseResp<CertificatePrepareResp> certificatePrepare(String short_url, String token) throws Exception {
         String object_id = DouYinHttpUtils.getDouYinUrlParams(short_url, "object_id");

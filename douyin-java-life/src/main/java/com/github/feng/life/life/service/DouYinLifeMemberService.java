@@ -1,10 +1,10 @@
 package com.github.feng.life.life.service;
 
+import com.github.feng.common.resp.BaseResp;
 import com.github.feng.life.life.req.MemberUpdateReq;
-import com.github.feng.life.life.resp.BaseResp;
 import com.github.feng.life.life.resp.MemberUpdateResp;
 
-public interface DouYinMemberService {
+public interface DouYinLifeMemberService {
 
     /**
      * 会员数据更新，更新抖音用户的积分/等级

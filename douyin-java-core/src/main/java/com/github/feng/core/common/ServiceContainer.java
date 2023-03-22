@@ -1,4 +1,4 @@
-package com.github.feng.life.core.common;
+package com.github.feng.core.common;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,12 +1,12 @@
 package com.github.feng.life.life.service;
 
+import com.github.feng.common.resp.BaseResp;
 import com.github.feng.life.life.req.ShopPoiQueryReq;
-import com.github.feng.life.life.resp.BaseResp;
 import com.github.feng.life.life.resp.PoiMatchRelationQuery;
 import com.github.feng.life.life.resp.ShopPoiQueryResp;
 import java.util.List;
 
-public interface DouYinShopService {
+public interface DouYinLifeShopService {
 
     /**
      * 门店信息查询

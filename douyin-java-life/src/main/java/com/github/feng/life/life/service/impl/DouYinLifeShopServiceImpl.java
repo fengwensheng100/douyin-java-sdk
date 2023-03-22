@@ -4,19 +4,19 @@ import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.lang.TypeReference;
 import cn.hutool.json.JSONUtil;
 import com.github.feng.common.constant.DouYinLifeConstant;
+import com.github.feng.common.resp.BaseResp;
 import com.github.feng.common.util.DouYinHttpUtils;
 import com.github.feng.common.util.HttpUtils;
 import com.github.feng.life.life.req.ShopPoiQueryReq;
-import com.github.feng.life.life.resp.BaseResp;
 import com.github.feng.life.life.resp.PoiMatchRelationQuery;
 import com.github.feng.life.life.resp.ShopPoiQueryResp;
-import com.github.feng.life.life.service.DouYinShopService;
+import com.github.feng.life.life.service.DouYinLifeShopService;
 import org.apache.commons.lang3.StringUtils;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class DouYinShopServiceImpl implements DouYinShopService {
+public class DouYinLifeShopServiceImpl implements DouYinLifeShopService {
 
     public BaseResp<ShopPoiQueryResp> shopPoiQuery(ShopPoiQueryReq shopPoiQueryReq, String token) throws Exception {
         if (shopPoiQueryReq.getSize() == 0) {

@@ -1,6 +1,6 @@
 package com.github.feng.life.life.service;
 
-public interface DouYinAfterSaleService {
+public interface DouYinLifeAfterSaleService {
 
     /**
      * 拒绝接单接口

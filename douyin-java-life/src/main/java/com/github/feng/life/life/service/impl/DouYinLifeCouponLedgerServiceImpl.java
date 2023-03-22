@@ -3,18 +3,18 @@ package com.github.feng.life.life.service.impl;
 import cn.hutool.core.lang.TypeReference;
 import cn.hutool.json.JSONUtil;
 import com.github.feng.common.constant.DouYinLifeConstant;
+import com.github.feng.common.resp.BaseResp;
 import com.github.feng.common.util.DouYinHttpUtils;
 import com.github.feng.common.util.HttpUtils;
 import com.github.feng.life.life.req.LedgerDetailedQueryReq;
 import com.github.feng.life.life.req.VerifyRecordQueryReq;
-import com.github.feng.life.life.resp.BaseResp;
 import com.github.feng.life.life.resp.CertificateBillQueryResp;
 import com.github.feng.life.life.resp.LedgerDetailedQueryResp;
-import com.github.feng.life.life.service.DouYinCouponLedgerService;
+import com.github.feng.life.life.service.DouYinLifeCouponLedgerService;
 import org.apache.commons.lang3.StringUtils;
 import java.util.Map;
 
-public class DouYinCouponLedgerServiceImpl implements DouYinCouponLedgerService {
+public class DouYinLifeCouponLedgerServiceImpl implements DouYinLifeCouponLedgerService {
 
     public BaseResp<CertificateBillQueryResp> verifyRecordQuery(VerifyRecordQueryReq verifyRecordQueryReq, String token) throws Exception {
         if (verifyRecordQueryReq.getSize() == 0) {

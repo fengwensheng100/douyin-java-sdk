@@ -4,15 +4,15 @@ import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.lang.TypeReference;
 import cn.hutool.json.JSONUtil;
 import com.github.feng.common.constant.DouYinLifeConstant;
+import com.github.feng.common.resp.BaseResp;
 import com.github.feng.common.util.DouYinHttpUtils;
 import com.github.feng.common.util.HttpUtils;
 import com.github.feng.life.life.req.MemberUpdateReq;
-import com.github.feng.life.life.resp.BaseResp;
 import com.github.feng.life.life.resp.MemberUpdateResp;
-import com.github.feng.life.life.service.DouYinMemberService;
+import com.github.feng.life.life.service.DouYinLifeMemberService;
 import org.apache.commons.lang3.StringUtils;
 
-public class DouYinMemberServiceImpl implements DouYinMemberService {
+public class DouYinLifeMemberServiceImpl implements DouYinLifeMemberService {
 
     public BaseResp<MemberUpdateResp> memberUpdate(MemberUpdateReq memberUpdateReq, String token) throws Exception {
         if (StringUtils.isBlank(memberUpdateReq.getAccount_id())) {
