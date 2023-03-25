@@ -19,7 +19,7 @@
 - 验券历史查询（已实现）
 - 账单详细查询（已实现）
 #### 会员接入
-- 会员数据更新（未实现）
+- 会员数据更新（已实现）
 #### 外卖
 - 拒绝接单接口（未实现）
 - 商家取消订单接口（未实现）
@@ -28,15 +28,17 @@
 - 商家同意/拒绝退款接口（未实现）
 - 自配送-回传配送信息接口（未实现）
 
+### 抖音小程序
+
 ## 开始使用
 - 关于接口详细信息参考[【抖音开放平台官方文档】](https://partner.open-douyin.com/docs/resource/zh-CN/dop/develop/openapi/list)
 
 1.在pom文件中引入下面依赖
 ```xml
 <dependency>
-  <groupId>com.github.fengws</groupId>
-  <artifactId>douyin-java-sdk</artifactId>
-  <version>1.0.0</version>
+    <groupId>com.github.feng</groupId>
+    <artifactId>douyin-java-sdk</artifactId>
+    <version>1.0.0</version>
 </dependency>
 ```
 
@@ -57,3 +59,29 @@ String douYinToken = douYinService.getDouYinLifeService().getDouYinToken();
 ```java
 BaseResp<CertificatePrepareResp> certificatePrepareRespBaseResp = douYinService.getDouYinCouponService().certificatePrepareByCode("150000000000000", douYinToken);
 ```
+
+- SpringBoot接入douyin-java-sdk
+
+
+1.在pom文件中引入下面依赖
+```xml
+<dependency>
+    <groupId>com.github.feng</groupId>
+    <artifactId>douyin-java-life-spring-boot-starter</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+2.properties配置参数
+```java
+dy.life.client-key=xxx
+dy.life.client-secret=xxx
+```
+
+3.通过IOC容器注入DouYinService对象即可开始使用
+```java
+@Autowired
+DouYinService douYinService;
+douYinService.getClientToken();
+```
+

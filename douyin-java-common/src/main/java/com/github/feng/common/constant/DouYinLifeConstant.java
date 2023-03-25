@@ -10,6 +10,16 @@ public interface DouYinLifeConstant {
      */
     String CLIENT_TOKEN = "https://open.douyin.com/oauth/client_token/";
 
+    /**
+     * 获取access_token
+     */
+    String ACCESS_TOKEN = "https://open.douyin.com/oauth/access_token/";
+
+    /**
+     * 抖音获取授权码
+     */
+    String OAUTH_CONNECT = "https://open.douyin.com/platform/oauth/connect/";
+
     //******************************** 门店管理 ********************************
 
     /**

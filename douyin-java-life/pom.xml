@@ -12,6 +12,8 @@
 
     <properties>
         <douyin-java-common.version>1.0.0</douyin-java-common.version>
+        <jedis.version>3.3.0</jedis.version>
+        <spring-data-redis.version>2.3.3.RELEASE</spring-data-redis.version>
     </properties>
 
     <dependencies>
@@ -19,6 +21,16 @@
             <groupId>com.github.feng</groupId>
             <artifactId>douyin-java-common</artifactId>
             <version>${douyin-java-common.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>${spring-data-redis.version}</version>
         </dependency>
     </dependencies>
 

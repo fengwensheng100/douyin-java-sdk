@@ -13,6 +13,8 @@
         <module>douyin-java-life</module>
         <module>douyin-java-data</module>
         <module>douyin-java-core</module>
+        <module>douyin-java-life-spring-boot-starter</module>
+        <module>douyin-java-miniapp</module>
     </modules>
 
     <properties>

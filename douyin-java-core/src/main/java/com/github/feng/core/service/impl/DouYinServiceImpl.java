@@ -11,8 +11,9 @@ import com.github.feng.core.common.ServiceContainer;
 import com.github.feng.core.service.DouYinService;
 import com.github.feng.data.service.*;
 import com.github.feng.data.service.impl.*;
-import com.github.feng.life.life.service.*;
-import com.github.feng.life.life.service.impl.*;
+import com.github.feng.life.service.*;
+import com.github.feng.life.service.impl.*;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -132,6 +133,41 @@ public class DouYinServiceImpl implements DouYinService {
 
     public Object getService(String name) {
         return ServiceContainer.getService(name);
+    }
+
+    @Override
+    public String getOauthConnect() throws Exception {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(DouYinLifeConstant.OAUTH_CONNECT);
+        stringBuilder.append("?");
+        stringBuilder.append("client_key=");
+        stringBuilder.append(getConfig().getClientKey());
+        stringBuilder.append("&");
+        stringBuilder.append("response_type=code");
+        stringBuilder.append("&");
+        stringBuilder.append("scope=");
+        stringBuilder.append("user_info");
+        stringBuilder.append("&");
+        stringBuilder.append("redirect_uri=");
+        stringBuilder.append("https://www.douyin.com");
+        return stringBuilder.toString();
+    }
+
+    @Override
+    public String getAccessToken() throws Exception {
+        Map<String, Object> param = new HashMap<>();
+        param.put("client_key", getConfig().getClientKey());
+        param.put("client_secret", getConfig().getClientSecret());
+        param.put("grant_type", "authorization_code");
+        String params = HttpUtils.mapToUrlParams(param);
+
+        String result = HttpUtils.post(DouYinLifeConstant.CLIENT_TOKEN, params, HttpUtils.APPLICATION_X_WWW_FORM_URLENCODED);
+
+        BaseResp<AccessTokenResp> prepareRespBaseResp = JSONUtil.toBean(result, new TypeReference<BaseResp<AccessTokenResp>>(){}, false);
+        if (prepareRespBaseResp.getData().getError_code() == 0) {
+            return prepareRespBaseResp.getData().getAccess_token();
+        }
+        return null;
     }
 
     @Override
