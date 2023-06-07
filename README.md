@@ -36,7 +36,7 @@
 1.在pom文件中引入下面依赖
 ```xml
 <dependency>
-    <groupId>com.github.feng</groupId>
+    <groupId>io.github.feng</groupId>
     <artifactId>douyin-java-sdk</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -66,7 +66,7 @@ BaseResp<CertificatePrepareResp> certificatePrepareRespBaseResp = douYinService.
 1.在pom文件中引入下面依赖
 ```xml
 <dependency>
-    <groupId>com.github.feng</groupId>
+    <groupId>io.github.feng</groupId>
     <artifactId>douyin-java-life-spring-boot-starter</artifactId>
     <version>1.0.0</version>
 </dependency>
