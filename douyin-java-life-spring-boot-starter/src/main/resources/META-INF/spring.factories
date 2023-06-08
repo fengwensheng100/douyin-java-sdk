@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=io.github.feng.life.starter.config.DouYinLifeConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=io.github.fengwensheng100.life.starter.config.DouYinLifeConfiguration
